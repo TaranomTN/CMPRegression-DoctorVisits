@@ -6,7 +6,6 @@
 
 ![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Jupyter Notebook](https://img.shields.io/badge/Jupyter-%23f37621.svg?logo=jupyter&logoColor=white)
-![License: MIT](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
@@ -14,7 +13,7 @@
 
 ### 📌 Overview
 
-This project implements and compares **three count regression models** — Poisson, Zero-Inflated Poisson (ZIP), and Conway-Maxwell-Poisson (CMP) — to model the number of doctor visits using real-world healthcare data.
+This project implements and compares **three count regression models** —  Zero-Inflated Poisson (ZIP), and Conway-Maxwell-Poisson (CMP) — to model the number of doctor visits using real-world healthcare data.
 
 The **CMP distribution** is particularly useful for modeling **over-dispersed or under-dispersed count data**, which is common in medical datasets where variance ≠ mean (violating Poisson assumptions).
 
@@ -32,14 +31,12 @@ The **CMP distribution** is particularly useful for modeling **over-dispersed or
 
 | Model   | NLL         | MSE        | RMSE       | MAE        |
 |---------|-------------|------------|------------|------------|
-| Poisson | 3753.391119 | 0.602192   | 0.776011   | 0.452129   |
 | ZIP     | 3550.806396 | 0.832637   | 0.912490   | 0.743798   |
 | **CMP** | **3518.177246** | **0.421156** | **0.783904** | **0.421156** |
 
 ✅ **Key Findings**:
 - **CMP achieves the lowest NLL**, indicating better probabilistic fit.
 - **Lowest MSE and MAE** → more accurate predictions.
-- ZIP improves over Poisson but still underperforms compared to CMP.
 - This confirms that **CMP is more flexible and robust** for real-world count data with dispersion.
 
 ---
@@ -52,3 +49,7 @@ Traditional Poisson regression assumes **mean = variance** — a condition rarel
 - **CMP** generalizes Poisson by introducing a dispersion parameter **ν (nu)**, allowing it to model both over- and under-dispersion.
 
 ---
+
+## 📬 Contact
+
+Created by [Taranom Torabi](mailto:taranom.torabi1377@gmail.com) — feel free to reach out with any questions or feedback!
