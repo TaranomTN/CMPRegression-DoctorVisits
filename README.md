@@ -9,7 +9,6 @@
 
 ---
 
-## 🇺🇸 English Version
 
 ### 📌 Overview
 
